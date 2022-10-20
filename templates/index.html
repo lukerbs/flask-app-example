@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Flask App Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- load css from static folder -->
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+    </head>
+    <body>
+        <h1>Hello Flask - My First Flask App</h1>
+        <h3>Favorite Food: {{food}}</h3>
+        <img src="{{url_for('static', filename='img/photo.png')}}" />
+        <div class="link">
+            <a href="{{url_for('page_2')}}">Page Routing - Click Me!</a>
+        <div>
+    </body>
+
+</html>

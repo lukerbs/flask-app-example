@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Page 2</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- load css from static folder -->
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}"/>
+    </head>
+    <body>
+        <h1>You Found the Second Page!</h1>
+        <!-- route home -->
+        <div class="link">
+            <a href="{{url_for('home')}}">Go Back</a>
+        </div>
+    </body>
+
+</html>
