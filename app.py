@@ -1,8 +1,6 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-port = 8000
-
 
 # home page
 @app.route('/')
@@ -18,4 +16,4 @@ def page_2():
 
 if __name__ == '__main__':
     # start the app
-    app.run(host='0.0.0.0', port=port, debug=False)
+    app.run(debug=False)
